@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #363246;
+    box-sizing: border-box;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+marquee{
+    position: absolute;
+    width: 100vw;
+    height: 100px;
+}
+
+#flow{
+    animation: flow 6s infinite linear;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes flow {
+    0%{
+    }
+    50%{
+        transform: translateX(100vw);
+    }
+    50.01%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(100vw);
+    }
+}
+
+
+.sun{
+    /* width: 350px; */
+    height: calc(15vh + 15vw) ;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: #a4a4a4;
+    margin-top: 50vh;
+    margin-left: 65vw;
+    position: fixed;
+    /* position: absolute; */
+}
+
+.land{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    align-self: flex-end;
+    background-color: #313B4A;
+    animation: wave 5s infinite alternate  ;
+
+}
+.land-svg{
+    position: fixed;
+    height: fit-content;
+    width: 100vw;
+    z-index: 3;
+    align-self: flex-end;
+    background-image: url("./images/land.svg");
+    /* min-height: 10vh; */
+    /* top: calc(100vh - 100%); */
+    /* width: 100vw; */
+    /* align-content: space-evenly; */
+}
+
+.lake{
+    position: absolute;
+    width: 200vw;
+    height: 6vh;
+    scale: 120%;
+    background-color: aliceblue;
+    align-self: flex-end;
+    border-radius: 50%;
+    rotate: -10deg;
+    margin-bottom: 1vh;
+    margin-left: -50%;
+
+    z-index: 2;
+}
+
+
+
+@keyframes wave {
+    0%{
+    }
+    100%{
+    }
+}
+
+
+.cloud1, .cloud6{
+    position: fixed;
+    align-self: flex-start;
+    background-color: #C7c6CA;
+}
+
+.cloud2, .cloud3, .cloud5{
+    position: fixed;
+    align-self: flex-start;
+    background-color: #918F99;
+}
+.cloud4{
+    position: fixed;
+    background-color: #B9B1B1;
+}
+
+.cloud1{
+    /* width: 160px; */
+    width: 11.7%;
+    /* height: 25px; */
+    /* height: 3.5%; */
+    height: calc(11.7vw / 6.4);
+}
+
+.cloud2{
+    /* width: 198px; */
+    width: 14.5%;
+    /* height: 30px; */
+    /* height: 4.5%; */
+    height: calc(14.5vw / 6.6);
+    /* left: 61px; */
+    left: 4.5%;
+    /* top: 55px; */
+    top: 8%;
+}
+.cloud3{
+    /* width: 242px; */
+    width: 17.7%;
+    /* height: 30px; */
+    height: calc(17.7vw / 8);
+    /* left: 500px; */
+    left: 36.6%;
+    /* top: 50px; */
+    top: 6.5%;
+}
+.cloud4{
+    /* width: 180px; */
+    width: 13.2%;
+    /* height: 30px; */
+    height: calc(13.2vw / 6);
+    /* left: 620px; */
+    left: 45.4%;
+}
+.cloud5{
+    /* width: 184px; */
+    width: 13.5%;
+    /* height: 30px; */
+    height: calc(13.5vw / 6.1);
+    /* left: 800px;
+    top: 30px; */
+    left: 58.5%;
+    top: 4%;
+}
+.cloud6{
+    /* width: 170px; */
+    width: 12.4%;
+    /* height: 20px; */
+    height: calc(12.4vw / 8.5);
+    /* left: calc(100% - 200px); */
+    left: 80vw;
+
+    top: 1.3vh;
+}
+
+
+.mount-container{
+    position: fixed;
+    width: 100vw;
+    height: 400px;
+    align-self: flex-end;
+    display: flex;
+    justify-content: left;
+}
+
+.mount{
+    align-self: flex-end;
+    margin-bottom: 5vh;
+    width: 0;
+    height: 0;
+    z-index: 2;
+
+}
+
+.mountain1{
+   
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 240px solid #1E1C25;
+}
+.mountain2{
+    border-left: 215px solid transparent;
+    border-right: 215px solid transparent;
+    border-bottom: 220px solid #1A1820;
+}
+.mountain3{
+    border-left: 320px solid transparent;
+    border-right: 320px solid transparent;
+    border-bottom: 120px solid #24232A;
+    z-index: -1;
+}
+.mountain4{
+    border-left: 220px solid transparent;
+    border-right: 220px solid transparent;
+    border-bottom: 150px solid #151519;
+}
+
+
+
+.marquee {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    display: block;
+    transform-origin: 50% 100%;
+    transition: transform 0.25s;
+}
+
+.marquee .inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    color: white; 
+    font-size: 8rem;
+    white-space: nowrap;
+}
+
+
+
+
+.sun{
+    animation: revolve 120s infinite linear;
+    z-index: -1;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes revolve1 {
+    0%{
+        transform: translate(calc(100vw - 100%), 450px);
+        /* transform: translate(calc(100%-), 450px); */
+    }
+    100%{
+        transform: translate(-100vw, -370px);
+        /* transform: translate(-1000px, -370px); */
+    }
+
+
+}
+
