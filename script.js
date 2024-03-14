@@ -42,8 +42,6 @@ if(W<H){
     mountains[2].style.marginLeft = "-20.5vw";
     mountains[3].style.marginLeft = "36vw";
     
-    mountains.style.position = "absolute";
-    mountains.style.align = "left";        
 }
 
 let x = 1;
@@ -51,6 +49,8 @@ for(let mountain of mountains){
     console.log(mountain.offsetWidth)
     // mountain.style.marginLeft = `-${x}px`;
     if(W<H){
+        mountain.style.position = "absolute";
+        mountain.style.align = "left";        
     }
     else{
         mountain.style.marginLeft = `-${perTow(x)}px`; 
