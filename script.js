@@ -1,5 +1,5 @@
-const W = window.screen.width;
-const H = window.screen.height;
+const W = window.innerWidth;
+const H = window.innerHeight;
 function perTow(a){
     return (a/100)*W;    
 }
