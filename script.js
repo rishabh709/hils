@@ -1,31 +1,3 @@
-const innerTags = document.querySelector(".inner");
-const el = innerTags.querySelectorAll("div");
-
-
-el.forEach(element => {
-    let tick = 1;
-    let val = element.offsetLeft;
-    let speed = element.dataset['speed'];
-    console.log(speed);
-    tick = parseFloat(speed);
-
-
-    const ticker = function() {
-        element.style.visibility = true;
-        val += tick;
-        element.style.left = val+"px";
-        if(val>window.innerWidth){
-            val=-element.clientWidth;
-
-        }
-
-        
-        // innerTags.children[0].clientWidth
-        requestAnimationFrame(ticker);
-    };
-    ticker();
-});
-
 const W = window.screen.width;
 const H = window.screen.height;
 function perTow(a){
@@ -64,3 +36,35 @@ console.log(mountains)
 for(let mountain of mountains){
     console.log(mountain.offsetLeft)
  }
+
+
+
+
+
+ const innerTags = document.querySelector(".inner");
+const el = innerTags.querySelectorAll("div");
+
+
+el.forEach(element => {
+    let tick = 1;
+    let val = element.offsetLeft;
+    let speed = element.dataset['speed'];
+    console.log(speed);
+    tick = parseFloat(speed);
+
+
+    const ticker = function() {
+        element.style.visibility = true;
+        val += tick;
+        element.style.left = val+"px";
+        if(val>window.innerWidth){
+            val=-element.clientWidth;
+
+        }
+
+        
+        // innerTags.children[0].clientWidth
+        requestAnimationFrame(ticker);
+    };
+    ticker();
+});
