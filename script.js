@@ -13,11 +13,16 @@ if(W<H){
     // mountains[1].style.marginLeft = "-35.43vw";
     // mountains[2].style.marginLeft = "-20.5vw";
     // mountains[3].style.marginLeft = "36vw";
+    // mountains[0].style.marginLeft = "-18.68vw";
+    // mountains[1].style.marginLeft = `${-48.54+18.68-35.43}vw`;
+    // mountains[2].style.marginLeft = `${-104.36+35.43-20.5}vw`;
+    // mountains[3].style.marginLeft = `${-155.33+20.5+36}vw`;
+    
+    mountains[0].style.marginLeft = `${-77}px`;
+    mountains[1].style.marginLeft = `${-200+77-146}px`;
+    mountains[2].style.marginLeft = `${-430+146-84.5}px`;
+    mountains[3].style.marginLeft = `${-640+84.5+149}px`;
 
-    mountains[0].style.marginLeft = "-18.68vw";
-    mountains[1].style.marginLeft = `${-48.54+18.68-35.43}vw`;
-    mountains[2].style.marginLeft = `${-104.36+35.43-20.5}vw`;
-    mountains[3].style.marginLeft = `${-155.33+20.5+36}vw`;
     
 }
 
