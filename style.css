@@ -186,10 +186,9 @@ marquee{
 
 .mount{
     align-self: flex-end;
-    margin-bottom: 5vh;
+    margin-bottom: 50vh;
     width: 0;
     height: 0;
-    z-index: 2;
 
 }
 
