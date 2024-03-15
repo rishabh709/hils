@@ -22,7 +22,6 @@ marquee{
 
 #flow{
     animation: flow 6s infinite linear;
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
 @keyframes flow {
@@ -41,7 +40,6 @@ marquee{
 
 
 .sun{
-    /* width: 350px; */
     height: calc(15vh + 15vw) ;
     aspect-ratio: 1/1;
     border-radius: 50%;
@@ -50,7 +48,6 @@ marquee{
     margin-top: 50vh;
     margin-left: 65vw;
     position: fixed;
-    /* position: absolute; */
 }
 
 .land{
@@ -186,6 +183,7 @@ marquee{
 
 .mount{
     align-self: flex-end;
+    margin-bottom: 5vh;
     width: 0;
     height: 0;
 
@@ -250,11 +248,9 @@ marquee{
 @keyframes revolve1 {
     0%{
         transform: translate(calc(100vw - 100%), 450px);
-        /* transform: translate(calc(100%-), 450px); */
     }
     100%{
         transform: translate(-100vw, -370px);
-        /* transform: translate(-1000px, -370px); */
     }
 
 
